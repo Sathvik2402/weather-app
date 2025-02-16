@@ -1,0 +1,96 @@
+.form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.main{
+  /*border: 1px solid green;*/
+  border-radius: 5px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexibly adjusts number of columns */
+  gap: 100px;  /* Optional: space between the cards */
+  margin:20px;
+  align-items: center;
+  justify-items: center;
+  border-radius: 10px;
+  /*border: 1px solid cornflowerblue;*/
+}
+
+
+.card{
+  margin: 10px;
+  justify-items: center;
+  border-radius: 10px;
+  /*border: 1px solid rosybrown;*/
+  width: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-body{
+  justify-items: center;
+  border-radius: 10px;
+  /*border: 1px solid slategray;*/
+}
+.card-bottom{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+  width:inherit;
+  border-radius: 10px;
+  /*border: 1px solid rosybrown;*/
+}
+
+#temp{
+  margin: 0px;
+  font-size: 50px;
+}
+p{
+  margin: 2px;
+  color:slategray;
+  /*background-color: lightslategrey;*/
+}
+
+
+input[type=text], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid slategray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: black;
+  color:whitesmoke;
+}
+label{
+  color: black;
+  background-color: slategray;
+}
+input[type=submit] {
+  width: 70%;
+  background-color: slategray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: lightslategrey;
+}
+
+body{
+
+    font-family: 'Arial', sans-serif; /* Use Arial, with sans-serif as a fallback */
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  background-color: black;
+}
